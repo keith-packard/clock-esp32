@@ -1,0 +1,25 @@
+SNEK_DRAW_VPATH=$(SNEK_ROOT)/draw
+
+SNEK_DRAW_SRC = \
+	snek-draw-convolve.c \
+	snek-draw-draw.c \
+	snek-draw-font.c \
+	snek-draw-geom.c \
+	snek-draw-glyphs.c \
+	snek-draw-hull.c \
+	snek-draw-matrix.c \
+	snek-draw-path.c \
+	snek-draw-pixmap.c \
+	snek-draw-poly.c \
+	snek-draw-primitive.c \
+	snek-draw-spline.c \
+	snek-draw-trig.c
+
+SNEK_DRAW_INC = \
+	snek-draw.h \
+	snek-draw-int.h
+
+SNEK_DRAW_BUILTINS = \
+	$(SNEK_DRAW_VPATH)/snek-draw.builtin
+
+SNEK_DRAW_CFLAGS = -I$(SNEK_DRAW_VPATH)
