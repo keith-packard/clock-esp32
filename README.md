@@ -1,7 +1,7 @@
-# Snek on ESP32
+# Stand-alone ESP32 clock
 
-This port uses the ESP IDF code for all of the hardware-specific
-bits. The snek port expects that to be installed in $HOME/esp/esp-idf.
-If you have installed it elsewhere, you can set the ESP_IDF
-environment variable to that directory.
-
+This is a prototype for exploring the twin rendering code on the ESP32
+WROVER KIT which kinda got away from me. The result is a
+network-synchronized clock which uses the 320x240 LCD display to
+present a simulated analog clock face which fetches time from a local
+host using the daytime protocol.
